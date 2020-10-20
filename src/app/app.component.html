@@ -1,0 +1,12 @@
+<div class="navigation">
+  <div class="links">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+    <a routerLink="/first" routerLinkActive="active">First (Comes with bundle)</a>
+    <a routerLink="/second" routerLinkActive="active">Second (Lazy Loaded)</a>
+    <a>Third (Lazy Loaded no URL)</a>
+    <a routerLink="/forth" routerLinkActive="active">Forth (Custom)</a>
+  </div>
+  <button (click)="onAuth()">{{ authService.isLogged ? 'Logout' : 'Login' }}</button>
+</div>
+
+<router-outlet></router-outlet>
