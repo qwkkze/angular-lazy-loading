@@ -25,7 +25,7 @@ const routes: Routes = [
   {
     path: 'third',
     loadChildren: () => import('./pages/third-page/third-page.module').then(module => module.ThirdPageModule),
-    data: { preload: true },
+    // data: { preload: true },
   },
   {
     path: 'forth',
@@ -42,7 +42,7 @@ const routes: Routes = [
     QuicklinkModule,
     RouterModule.forRoot(
       routes,
-      { preloadingStrategy: QuicklinkStrategy }
+      // { preloadingStrategy: CustomPreloadService }
     )
   ],
   exports: [RouterModule, QuicklinkModule]

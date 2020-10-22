@@ -22,7 +22,7 @@ export class CustomGuard implements CanActivate, CanLoad {
   }
 
   canLoad(route: Route, segments: UrlSegment[]): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    console.log('\n======Custom guard: canLoad()======');
+    // console.log('\n======Custom guard: canLoad()======');
     return this.authService.isLogged;
   }
 

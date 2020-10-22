@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { FirstPageComponent } from './pages/first-page/first-page.component';
-import {QuicklinkModule} from 'ngx-quicklink';
 
 @NgModule({
   declarations: [
